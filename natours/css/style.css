@@ -19,6 +19,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
+    padding: 30px;
 }
 
 .header {
@@ -27,4 +28,5 @@ body {
     background-size: cover; /* fit the image to the size fo the width */
     height: 95vh;
 
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100% ); /*x y*/
 }
