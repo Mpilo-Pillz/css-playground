@@ -31,6 +31,14 @@ body {
   text-decoration: none;
 }
 
+.btn:hover {
+  transform: translateY(-3px); /* negative takes it up*/
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
 .btn-white {
   background-color: #fff;
 }
@@ -54,6 +62,7 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden; /* hack to fix some quirky animation see min 12 on course but it somehow fixes the shaking*/
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
