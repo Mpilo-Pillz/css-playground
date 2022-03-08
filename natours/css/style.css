@@ -31,6 +31,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s;
+  position: relative;
 }
 
 .btn:hover {
@@ -45,6 +46,28 @@ body {
 
 .btn-white {
   background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  display: inline-block; /* the after is treated like a child of the element */
+
+  border-radius: 100px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scale(2); /* increases the element so we double it here */
 }
 
 .d-block {
