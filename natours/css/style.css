@@ -60,6 +60,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all 0.4s;
 }
 
 .btn-white::after {
@@ -67,7 +68,8 @@ body {
 }
 
 .btn:hover::after {
-  transform: scale(2); /* increases the element so we double it here */
+  transform: scale(1.5); /* increases the element so we double it here */
+  opacity: 0;
 }
 
 .d-block {
