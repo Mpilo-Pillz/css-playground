@@ -68,7 +68,8 @@ body {
 }
 
 .btn:hover::after {
-  transform: scale(1.5); /* increases the element so we double it here */
+  /* transform: scale(1.5);  increases the element so we double it here */
+  transform: scaleX(1.4) scaleY(1.6); /* increases the element so we double it here */
   opacity: 0;
 }
 
