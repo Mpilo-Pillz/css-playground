@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: wheat;
+}
+
+.background-grey-1 {
+  background-color: #777;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  position: relative;
+
+  /* background-color: #777; */
+}
+
+.animation-fill-mode-none {
+  animation: moveBoxForward 5s ease-in;
+}
+
+.animation-fill-mode-forwards {
+  animation: moveBoxForward 5s ease-in;
+  animation-fill-mode: forwards;
+}
+.animation-fill-mode-backwards {
+  animation: moveBoxForward 5s ease-in;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveBoxForward {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 80%;
+  }
+}
