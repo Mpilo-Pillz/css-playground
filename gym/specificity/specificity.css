@@ -9,7 +9,8 @@ body {
 }
 
 a {
-  background-color: purple !important;
+  background-color: purple;
+  /* background-color: purple !important; */
 }
 
 #nav div.pull-right a.button {
