@@ -17,6 +17,12 @@ a {
   background-color: orangered;
 }
 
+#nav div.pull-right a.button:hover {
+  /* added to overcome the specifity cos hover was not gettiong applied */
+  background-color: green;
+}
+
 #nav a.button:hover {
+  /* does not get appplied becuase the one before has a higher speficifity */
   background-color: yellow;
 }
