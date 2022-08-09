@@ -15,7 +15,10 @@ Dark green: #28b485
 
 html {
   /* root font size is set in thehtml selector */
-  font-size: 10px;
+  /* we shouldn't use px hear to overwite the user prefered fotn size meaning it will always be 10px 
+  regarless of what font the user sets and that is bad as it will prevent them form settign their prefered font size */
+  /* font-size: 10px; */
+  font-size: 62.5%; /* asuming font size is default to 16. but we want 10 so we divide 10 by 16 to get 62.5%. divide by the user defined font */
 }
 
 body {
